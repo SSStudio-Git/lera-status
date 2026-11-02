@@ -10,18 +10,9 @@ sites:
   - name: LeraLink API
     url: https://hub.lera.link/api/health
     __dangerous__body_down_if_text_missing: '"status":"ok"'
-  - name: Sajad Sepehri
-    url: https://sajadsepehri.com/
-  - name: Sajad Sepehri API
-    url: https://sajadsepehri.com/api/health
-    __dangerous__body_down_if_text_missing: '"status":"ok"'
   # Behind Cloudflare Access: a redirect to its sign-in counts as up, so it is not followed.
   - name: Platform administration
     url: https://admin.lera.link/api/health
-    maxRedirects: 0
-    expectedStatusCodes: [200, 302, 303]
-  - name: Sajad Sepehri administration
-    url: https://admin.sajadsepehri.com/api/health
     maxRedirects: 0
     expectedStatusCodes: [200, 302, 303]
 
