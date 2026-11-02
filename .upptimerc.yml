@@ -18,7 +18,11 @@ sites:
 
 status-website:
   cname: status.lera.link
-  name: LeraLink status
+  name: LeraLink
+  logoUrl: https://status.lera.link/lera-icon.png
+  favicon: https://status.lera.link/lera-icon.png
+  theme: light
+  css: "a { color: #1C39BB; } nav a img { border-radius: 8px; }"
   introTitle: "**LeraLink status**"
   introMessage: Whether LeraLink is up right now, checked from outside it.
   navbar:
